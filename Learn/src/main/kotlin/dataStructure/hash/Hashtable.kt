@@ -2,10 +2,6 @@ package dataStructure.hash
 
 import java.util.Hashtable
 
-enum class Number {
-    ONE,TWO,THREE,FOUR,FIVE,SIX,SEVEN
-}
-
 fun main() {
 
     val hashtable = Hashtable<String, Int>()
