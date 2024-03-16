@@ -18,8 +18,8 @@ data class City(
         @JoinColumn(name = "country_id")
         val country: Country,
 
-//        @OneToMany(mappedBy = "city", cascade = [CascadeType.ALL])
-//        val hotels: List<Hotel>,
+        @OneToMany(mappedBy = "city", cascade = [CascadeType.ALL])
+        val hotels: List<Hotel>? = null,
 
         @Column(length = 60)
         val ucity: String = "${city}_${country.id}"
