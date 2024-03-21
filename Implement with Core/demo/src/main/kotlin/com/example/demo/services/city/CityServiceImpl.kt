@@ -27,23 +27,20 @@ class CityServiceImpl: CityService {
     lateinit var cityRepository: CityRepository
 
     override fun addNew(t: City): City? {
-        beforeSaveOrUpdate(t)
-        val city = cityRepository.save(t)
-        city.id?.let { afterSave(it) }
-        return city
+        return cityRepository.save(t)
     }
 
     fun getCountry(id: Long): Country {
         return countryRepository.findById(id).get()
     }
 
-    fun beforeSaveOrUpdate(t: City) {
+    fun beforeSave(t: City) {
         if (t.city.isEmpty() || t.city.isBlank()) {
-            throw NullPointerException("City can not be empty!")
+            throw NullPointerException("City cannot be empty!")
         }
         for (city in cityRepository.findAll()) {
             if (t.city == city.city) {
-                throw IllegalStateException("${t.city} is already existed!")
+                throw IllegalStateException("Unable to add ${t.city} due to existing data!")
             }
         }
     }
@@ -78,13 +75,6 @@ class CityServiceImpl: CityService {
         return cityRepository.findById(id).get()
     }
 
-    fun update(id: Long, t: City): City? {
-        beforeSaveOrUpdate(t)
-        val city = updateObj(id, t)
-        city?.id?.let{ afterUpdate(it) }
-        return city
-    }
-
     override fun updateObj(id: Long, t: City): City? {
         val city = cityRepository.findById(id).get()
 
@@ -94,6 +84,17 @@ class CityServiceImpl: CityService {
         city.hotels?.addAll(city.hotels?: listOf())
 
         return cityRepository.save(city)
+    }
+
+    fun beforeUpdate(t: City) {
+        if (t.city.isEmpty() || t.city.isBlank()) {
+            throw NullPointerException("City cannot be empty!")
+        }
+        for (city in cityRepository.findAll()) {
+            if (t.city == city.city) {
+                throw IllegalStateException("Unable to update ${t.city}! Existing data found!")
+            }
+        }
     }
 
     fun afterUpdate(id: Long) {

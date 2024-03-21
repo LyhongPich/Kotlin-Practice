@@ -145,3 +145,136 @@
 21-03-2024 08:08:46.860 [SpringApplicationShutdownHook] [demo] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
 21-03-2024 08:08:46.863 [SpringApplicationShutdownHook] [demo] INFO com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
 21-03-2024 08:08:46.866 [SpringApplicationShutdownHook] [demo] INFO com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+21-03-2024 09:36:49.406 [restartedMain] [demo] INFO com.example.demo.DemoApplicationKt.logStarting - Starting DemoApplicationKt using Java 17.0.6 with PID 3148 (D:\Documents\Lesson\Project\Implement with Core\demo\target\classes started by Lenovo in D:\Documents\Lesson\Project\Implement with Core\demo)
+21-03-2024 09:36:49.412 [restartedMain] [demo] INFO com.example.demo.DemoApplicationKt.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+21-03-2024 09:36:49.495 [restartedMain] [demo] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-03-2024 09:36:49.496 [restartedMain] [demo] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-03-2024 09:36:50.592 [restartedMain] [demo] INFO o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-03-2024 09:36:50.659 [restartedMain] [demo] INFO o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+21-03-2024 09:36:51.130 [restartedMain] [demo] INFO o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port 8080 (http)
+21-03-2024 09:36:51.144 [restartedMain] [demo] INFO o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+21-03-2024 09:36:51.146 [restartedMain] [demo] INFO o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+21-03-2024 09:36:51.147 [restartedMain] [demo] INFO o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+21-03-2024 09:36:51.197 [restartedMain] [demo] INFO o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+21-03-2024 09:36:51.197 [restartedMain] [demo] INFO o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1700 ms
+21-03-2024 09:36:51.300 [restartedMain] [demo] INFO com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+21-03-2024 09:36:51.477 [restartedMain] [demo] INFO com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a7ec11c
+21-03-2024 09:36:51.479 [restartedMain] [demo] INFO com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+21-03-2024 09:36:51.518 [restartedMain] [demo] INFO o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-03-2024 09:36:51.564 [restartedMain] [demo] INFO org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.4.4.Final
+21-03-2024 09:36:51.592 [restartedMain] [demo] INFO o.h.c.i.RegionFactoryInitiator.initiateService - HHH000026: Second-level cache disabled
+21-03-2024 09:36:51.840 [restartedMain] [demo] INFO o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-03-2024 09:36:51.893 [restartedMain] [demo] WARN org.hibernate.orm.deprecation.constructDialect - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+21-03-2024 09:36:52.677 [restartedMain] [demo] INFO o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21-03-2024 09:36:52.814 [restartedMain] [demo] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-03-2024 09:36:53.495 [restartedMain] [demo] WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-03-2024 09:36:53.832 [restartedMain] [demo] INFO o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+21-03-2024 09:36:53.854 [restartedMain] [demo] INFO o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+21-03-2024 09:36:53.869 [restartedMain] [demo] INFO o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port 8080 (http) with context path ''
+21-03-2024 09:36:53.877 [restartedMain] [demo] INFO com.example.demo.DemoApplicationKt.logStarted - Started DemoApplicationKt in 4.979 seconds (process running for 5.985)
+21-03-2024 09:58:11.348 [SpringApplicationShutdownHook] [demo] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-03-2024 09:58:11.354 [SpringApplicationShutdownHook] [demo] INFO com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+21-03-2024 09:58:11.358 [SpringApplicationShutdownHook] [demo] INFO com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+21-03-2024 10:00:55.920 [restartedMain] [demo] INFO com.example.demo.DemoApplicationKt.logStarting - Starting DemoApplicationKt using Java 17.0.6 with PID 6076 (D:\Documents\Lesson\Project\Implement with Core\demo\target\classes started by Lenovo in D:\Documents\Lesson\Project\Implement with Core\demo)
+21-03-2024 10:00:55.928 [restartedMain] [demo] INFO com.example.demo.DemoApplicationKt.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+21-03-2024 10:00:56.049 [restartedMain] [demo] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-03-2024 10:00:56.051 [restartedMain] [demo] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-03-2024 10:00:57.958 [restartedMain] [demo] INFO o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-03-2024 10:00:58.059 [restartedMain] [demo] INFO o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 88 ms. Found 4 JPA repository interfaces.
+21-03-2024 10:00:58.968 [restartedMain] [demo] INFO o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port 8080 (http)
+21-03-2024 10:00:58.979 [restartedMain] [demo] INFO o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+21-03-2024 10:00:58.981 [restartedMain] [demo] INFO o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+21-03-2024 10:00:58.981 [restartedMain] [demo] INFO o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+21-03-2024 10:00:59.055 [restartedMain] [demo] INFO o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+21-03-2024 10:00:59.056 [restartedMain] [demo] INFO o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3001 ms
+21-03-2024 10:00:59.194 [restartedMain] [demo] INFO com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+21-03-2024 10:00:59.395 [restartedMain] [demo] INFO com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2366b742
+21-03-2024 10:00:59.396 [restartedMain] [demo] INFO com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+21-03-2024 10:00:59.449 [restartedMain] [demo] INFO o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-03-2024 10:00:59.501 [restartedMain] [demo] INFO org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.4.4.Final
+21-03-2024 10:00:59.543 [restartedMain] [demo] INFO o.h.c.i.RegionFactoryInitiator.initiateService - HHH000026: Second-level cache disabled
+21-03-2024 10:00:59.804 [restartedMain] [demo] INFO o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-03-2024 10:00:59.875 [restartedMain] [demo] WARN org.hibernate.orm.deprecation.constructDialect - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+21-03-2024 10:01:01.052 [restartedMain] [demo] INFO o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21-03-2024 10:01:01.226 [restartedMain] [demo] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-03-2024 10:01:02.547 [restartedMain] [demo] WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-03-2024 10:01:03.562 [restartedMain] [demo] INFO o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+21-03-2024 10:01:03.594 [restartedMain] [demo] INFO o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+21-03-2024 10:01:03.647 [restartedMain] [demo] INFO o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port 8080 (http) with context path ''
+21-03-2024 10:01:03.680 [restartedMain] [demo] INFO com.example.demo.DemoApplicationKt.logStarted - Started DemoApplicationKt in 8.457 seconds (process running for 9.719)
+21-03-2024 10:01:41.669 [http-nio-8080-exec-2] [demo] INFO o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-03-2024 10:01:41.670 [http-nio-8080-exec-2] [demo] INFO o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+21-03-2024 10:01:41.671 [http-nio-8080-exec-2] [demo] INFO o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 1 ms
+21-03-2024 10:01:41.829 [http-nio-8080-exec-2] [demo] DEBUGorg.hibernate.SQL.logStatement - select c1_0.id,c1_0.country,c1_0.created_by_id,c1_0.date_created,c1_0.status,c1_0.last_updated,c1_0.updated_by_id,c1_0.version from countries c1_0 order by c1_0.id
+21-03-2024 10:01:41.965 [http-nio-8080-exec-2] [demo] DEBUGorg.hibernate.SQL.logStatement - select c1_0.countryid,c1_0.id,c1_0.city,c1_0.created_by_id,c1_0.date_created,c1_0.status,c1_0.ucity,c1_0.last_updated,c1_0.updated_by_id,c1_0.version from cities c1_0 where c1_0.countryid=?
+21-03-2024 10:01:41.968 [http-nio-8080-exec-2] [demo] DEBUGorg.hibernate.SQL.logStatement - select c1_0.countryid,c1_0.id,c1_0.city,c1_0.created_by_id,c1_0.date_created,c1_0.status,c1_0.ucity,c1_0.last_updated,c1_0.updated_by_id,c1_0.version from cities c1_0 where c1_0.countryid=?
+21-03-2024 10:02:03.160 [SpringApplicationShutdownHook] [demo] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-03-2024 10:02:03.163 [SpringApplicationShutdownHook] [demo] INFO com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+21-03-2024 10:02:03.165 [SpringApplicationShutdownHook] [demo] INFO com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+21-03-2024 11:06:52.401 [restartedMain] [demo] INFO com.example.demo.DemoApplicationKt.logStarting - Starting DemoApplicationKt using Java 17.0.6 with PID 18072 (D:\Documents\Lesson\Project\Implement with Core\demo\target\classes started by Lenovo in D:\Documents\Lesson\Project\Implement with Core\demo)
+21-03-2024 11:06:52.406 [restartedMain] [demo] INFO com.example.demo.DemoApplicationKt.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+21-03-2024 11:06:52.481 [restartedMain] [demo] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21-03-2024 11:06:52.481 [restartedMain] [demo] INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21-03-2024 11:06:53.763 [restartedMain] [demo] INFO o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+21-03-2024 11:06:53.875 [restartedMain] [demo] INFO o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 99 ms. Found 4 JPA repository interfaces.
+21-03-2024 11:06:54.690 [restartedMain] [demo] INFO o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port 8080 (http)
+21-03-2024 11:06:54.706 [restartedMain] [demo] INFO o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+21-03-2024 11:06:54.710 [restartedMain] [demo] INFO o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+21-03-2024 11:06:54.710 [restartedMain] [demo] INFO o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/10.1.19]
+21-03-2024 11:06:54.829 [restartedMain] [demo] INFO o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+21-03-2024 11:06:54.830 [restartedMain] [demo] INFO o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 2348 ms
+21-03-2024 11:06:55.140 [restartedMain] [demo] INFO o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+21-03-2024 11:06:55.267 [restartedMain] [demo] INFO org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 6.4.4.Final
+21-03-2024 11:06:55.350 [restartedMain] [demo] INFO o.h.c.i.RegionFactoryInitiator.initiateService - HHH000026: Second-level cache disabled
+21-03-2024 11:06:55.891 [restartedMain] [demo] INFO o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+21-03-2024 11:06:55.939 [restartedMain] [demo] INFO com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+21-03-2024 11:06:56.226 [restartedMain] [demo] INFO com.zaxxer.hikari.pool.HikariPool.checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31496cdc
+21-03-2024 11:06:56.236 [restartedMain] [demo] INFO com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+21-03-2024 11:06:56.282 [restartedMain] [demo] WARN org.hibernate.orm.deprecation.constructDialect - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+21-03-2024 11:06:57.810 [restartedMain] [demo] INFO o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+21-03-2024 11:06:57.934 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - create table cities (id bigserial not null, created_by_id bigint, date_created timestamp(6), status boolean default true not null, last_updated timestamp(6), updated_by_id bigint, version integer, city varchar(50), ucity varchar(255), countryid bigint, primary key (id))
+21-03-2024 11:06:57.963 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - create table countries (id bigserial not null, created_by_id bigint, date_created timestamp(6), status boolean default true not null, last_updated timestamp(6), updated_by_id bigint, version integer, country varchar(50), primary key (id))
+21-03-2024 11:06:57.975 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - create table hotels (id bigserial not null, created_by_id bigint, date_created timestamp(6), status boolean default true not null, last_updated timestamp(6), updated_by_id bigint, version integer, cost float(53), hotel varchar(100), info varchar(255), stars integer, cityid bigint, primary key (id))
+21-03-2024 11:06:57.990 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - create table images (id bigserial not null, created_by_id bigint, date_created timestamp(6), status boolean default true not null, last_updated timestamp(6), updated_by_id bigint, version integer, imagepath varchar(256), hotelid bigint, primary key (id))
+21-03-2024 11:06:58.003 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - alter table if exists cities drop constraint if exists UKja6kd2vaqnwf83musxqr9qah2
+21-03-2024 11:06:58.009 [restartedMain] [demo] WARN o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+21-03-2024 11:06:58.010 [restartedMain] [demo] WARN o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - constraint "ukja6kd2vaqnwf83musxqr9qah2" of relation "cities" does not exist, skipping
+21-03-2024 11:06:58.011 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - alter table if exists cities add constraint UKja6kd2vaqnwf83musxqr9qah2 unique (city)
+21-03-2024 11:06:58.019 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - alter table if exists countries drop constraint if exists UK3lq92imnnml27mqu9lr1emjge
+21-03-2024 11:06:58.022 [restartedMain] [demo] WARN o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+21-03-2024 11:06:58.024 [restartedMain] [demo] WARN o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - constraint "uk3lq92imnnml27mqu9lr1emjge" of relation "countries" does not exist, skipping
+21-03-2024 11:06:58.025 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - alter table if exists countries add constraint UK3lq92imnnml27mqu9lr1emjge unique (country)
+21-03-2024 11:06:58.031 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - alter table if exists hotels drop constraint if exists UKcjb3o0c32k48ljt6c8hv4xvvs
+21-03-2024 11:06:58.034 [restartedMain] [demo] WARN o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+21-03-2024 11:06:58.035 [restartedMain] [demo] WARN o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - constraint "ukcjb3o0c32k48ljt6c8hv4xvvs" of relation "hotels" does not exist, skipping
+21-03-2024 11:06:58.036 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - alter table if exists hotels add constraint UKcjb3o0c32k48ljt6c8hv4xvvs unique (hotel)
+21-03-2024 11:06:58.043 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - alter table if exists images drop constraint if exists UKo96228pf2emfge29o9tnjprcn
+21-03-2024 11:06:58.046 [restartedMain] [demo] WARN o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+21-03-2024 11:06:58.047 [restartedMain] [demo] WARN o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - constraint "uko96228pf2emfge29o9tnjprcn" of relation "images" does not exist, skipping
+21-03-2024 11:06:58.048 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - alter table if exists images add constraint UKo96228pf2emfge29o9tnjprcn unique (imagepath)
+21-03-2024 11:06:58.056 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - alter table if exists cities add constraint FKjiid62wexqfewvl9648ygr9pn foreign key (countryid) references countries
+21-03-2024 11:06:58.075 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - alter table if exists hotels add constraint FK389p6aniig5csmmhgn4ltd0a8 foreign key (cityid) references cities
+21-03-2024 11:06:58.083 [restartedMain] [demo] DEBUGorg.hibernate.SQL.logStatement - alter table if exists images add constraint FK2d9ytkcpnds9fui0798yo2t65 foreign key (hotelid) references hotels
+21-03-2024 11:06:58.095 [restartedMain] [demo] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21-03-2024 11:06:59.858 [restartedMain] [demo] WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+21-03-2024 11:07:00.594 [restartedMain] [demo] INFO o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+21-03-2024 11:07:00.648 [restartedMain] [demo] INFO o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+21-03-2024 11:07:00.684 [restartedMain] [demo] INFO o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port 8080 (http) with context path ''
+21-03-2024 11:07:00.704 [restartedMain] [demo] INFO com.example.demo.DemoApplicationKt.logStarted - Started DemoApplicationKt in 9.034 seconds (process running for 10.112)
+21-03-2024 11:08:08.275 [http-nio-8080-exec-1] [demo] INFO o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21-03-2024 11:08:08.276 [http-nio-8080-exec-1] [demo] INFO o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+21-03-2024 11:08:08.283 [http-nio-8080-exec-1] [demo] INFO o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 5 ms
+21-03-2024 11:08:09.488 [http-nio-8080-exec-1] [demo] DEBUGorg.hibernate.SQL.logStatement - select c1_0.id,c1_0.country,c1_0.created_by_id,c1_0.date_created,c1_0.status,c1_0.last_updated,c1_0.updated_by_id,c1_0.version from countries c1_0
+21-03-2024 11:08:09.608 [http-nio-8080-exec-1] [demo] DEBUGorg.hibernate.SQL.logStatement - insert into countries (country,created_by_id,date_created,status,last_updated,updated_by_id,version) values (?,?,?,?,?,?,?)
+21-03-2024 11:08:09.765 [http-nio-8080-exec-1] [demo] DEBUGorg.hibernate.SQL.logStatement - update countries set country=?,created_by_id=?,date_created=?,status=?,last_updated=?,updated_by_id=?,version=? where id=?
+21-03-2024 11:08:23.331 [http-nio-8080-exec-3] [demo] ERRORc.i.c.core.GlobalExceptionHandler.handleAllExceptions - Country can not be empty!
+21-03-2024 11:08:23.341 [http-nio-8080-exec-3] [demo] WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.logException - Resolved [java.lang.NullPointerException: Country can not be empty!]
+21-03-2024 11:08:39.444 [http-nio-8080-exec-6] [demo] DEBUGorg.hibernate.SQL.logStatement - select c1_0.id,c1_0.country,c1_0.created_by_id,c1_0.date_created,c1_0.status,c1_0.last_updated,c1_0.updated_by_id,c1_0.version from countries c1_0
+21-03-2024 11:08:39.471 [http-nio-8080-exec-6] [demo] ERRORc.i.c.core.GlobalExceptionHandler.handleAllExceptions - Cambodia is already existed!
+21-03-2024 11:08:39.474 [http-nio-8080-exec-6] [demo] WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.logException - Resolved [java.lang.IllegalStateException: Cambodia is already existed!]
+21-03-2024 11:09:11.030 [http-nio-8080-exec-5] [demo] DEBUGorg.hibernate.SQL.logStatement - select c1_0.id,c1_0.country,c1_0.created_by_id,c1_0.date_created,c1_0.status,c1_0.last_updated,c1_0.updated_by_id,c1_0.version from countries c1_0
+21-03-2024 11:09:11.032 [http-nio-8080-exec-5] [demo] DEBUGorg.hibernate.SQL.logStatement - insert into countries (country,created_by_id,date_created,status,last_updated,updated_by_id,version) values (?,?,?,?,?,?,?)
+21-03-2024 11:09:11.040 [http-nio-8080-exec-5] [demo] DEBUGorg.hibernate.SQL.logStatement - update countries set country=?,created_by_id=?,date_created=?,status=?,last_updated=?,updated_by_id=?,version=? where id=?
+21-03-2024 11:09:39.181 [SpringApplicationShutdownHook] [demo] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+21-03-2024 11:09:39.183 [SpringApplicationShutdownHook] [demo] INFO com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+21-03-2024 11:09:39.193 [SpringApplicationShutdownHook] [demo] INFO com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.

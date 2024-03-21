@@ -29,7 +29,7 @@ data class City(
         targetEntity = Hotel::class, cascade = [CascadeType.ALL],
         fetch = FetchType.LAZY, orphanRemoval = true
     )
-    @JoinColumn(name = "cityid")
+    @JoinColumn(name = "cityid", referencedColumnName = "id")
     var hotels: MutableList<Hotel>? = null,
 
 

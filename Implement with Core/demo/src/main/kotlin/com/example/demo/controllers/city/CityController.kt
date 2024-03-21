@@ -24,12 +24,34 @@ class CityController: GenericRestfulController<City>() {
     @PostMapping("/add/{countryid}")
     fun add(@PathVariable countryid: Long, @RequestBody city: City): ResponseDTO {
         val country = cityService.getCountry(countryid)
-        return JSONFormat.respondObj(cityService.addNew(City(null, city.city, country)))
+        beforeSave(city)
+        val addCity = cityService.addNew(City(null, city.city, country))
+        afterSaved(city)
+        return JSONFormat.respondObj(addCity)
+    }
+
+    override fun beforeSave(entity: City) {
+        cityService.beforeSave(entity)
+    }
+
+    override fun afterSaved(entity: City) {
+        entity.id?.let { cityService.afterSave(it) }
     }
 
     @PutMapping("/update/{cityid}")
     fun edit(@PathVariable cityid: Long, @RequestBody city: City): ResponseDTO {
-        return JSONFormat.respondObj(cityService.update(cityid, city))
+        beforeUpdate(city)
+        val updateCity = cityService.updateObj(cityid, city)
+        afterUpdated(city)
+        return JSONFormat.respondObj(updateCity)
+    }
+
+    override fun beforeUpdate(entity: City) {
+        cityService.beforeUpdate(entity)
+    }
+
+    override fun afterUpdated(entity: City) {
+        entity.id?.let { cityService.afterUpdate(it) }
     }
 
     @GetMapping("/view")

@@ -1,6 +1,7 @@
 package com.example.demo.models.image
 
 import com.example.demo.models.hotels.Hotel
+import com.fasterxml.jackson.annotation.JsonIgnore
 import com.ig.core_backend.core.BaseEntity
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
@@ -20,9 +21,10 @@ data class Image(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long?=null,
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "hotelid")
-    var hotel: Hotel,
+    @JoinColumn(name = "hotelid", insertable = true, updatable = false, nullable = true)
+    var hotel: Hotel?=null,
 
     @Column(length = 256)
     var imagepath: String,

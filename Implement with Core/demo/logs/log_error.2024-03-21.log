@@ -1,3 +1,5 @@
 21-03-2024 08:00:42.506 [http-nio-8080-exec-3] [demo] ERRORc.i.c.core.GlobalExceptionHandler.handleAllExceptions - Cambodia is already existed!
 21-03-2024 08:01:04.779 [http-nio-8080-exec-8] [demo] ERRORc.i.c.core.GlobalExceptionHandler.handleAllExceptions - USA is already existed!
 21-03-2024 08:08:17.101 [http-nio-8080-exec-2] [demo] ERRORc.i.c.core.GlobalExceptionHandler.handleAllExceptions - Cambodia is already existed!
+21-03-2024 11:08:23.331 [http-nio-8080-exec-3] [demo] ERRORc.i.c.core.GlobalExceptionHandler.handleAllExceptions - Country can not be empty!
+21-03-2024 11:08:39.471 [http-nio-8080-exec-6] [demo] ERRORc.i.c.core.GlobalExceptionHandler.handleAllExceptions - Cambodia is already existed!

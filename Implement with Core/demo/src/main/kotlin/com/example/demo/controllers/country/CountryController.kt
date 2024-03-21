@@ -21,7 +21,6 @@ class CountryController: GenericRestfulController<Country>() {
     @Autowired
     lateinit var countryService: CountryServiceImpl
 
-
     @GetMapping("/view/{id}")
     fun listOne(@PathVariable id: Long): ResponseDTO {
         return JSONFormat.respondObj(countryService.findById(id))
@@ -44,11 +43,33 @@ class CountryController: GenericRestfulController<Country>() {
 
     @PostMapping("/add")
     fun add(@RequestBody country: Country): ResponseDTO {
-        return JSONFormat.respondObj(countryService.addNew(country))
+        beforeSave(country)
+        val addCountry = countryService.addNew(country)
+        afterSaved(country)
+        return JSONFormat.respondObj(addCountry)
+    }
+
+    override fun beforeSave(entity: Country) {
+        countryService.beforeSave(entity)
+    }
+
+    override fun afterSaved(entity: Country) {
+        entity.id?.let { countryService.afterSave(it) }
     }
 
     @PutMapping("/update/{id}")
     fun edit(@PathVariable id: Long,@RequestBody country: Country): ResponseDTO {
-        return JSONFormat.respondObj(countryService.update(id, country))
+        beforeUpdate(country)
+        val updateCountry = countryService.updateObj(id, country)
+        afterUpdated(country)
+        return JSONFormat.respondObj(updateCountry)
+    }
+
+    override fun beforeUpdate(entity: Country) {
+        countryService.beforeUpdate(entity)
+    }
+
+    override fun afterUpdated(entity: Country) {
+        entity.id?.let { countryService.afterUpdate(it) }
     }
 }

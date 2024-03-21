@@ -21,23 +21,24 @@ class CountryServiceImpl: CountryService {
     lateinit var utilService: UtilService
 
     override fun addNew(t: Country): Country? {
-        beforeSaveOrUpdate(t)
         val save = countryRepository.save(t)
-        save.id?.let{ afterSave(it) }
         return save
     }
 
-    fun beforeSaveOrUpdate(t: Country) {
+    fun beforeSave(t: Country) {
         if (t.country.isEmpty() || t.country.isBlank()) {
             throw NullPointerException("Country can not be empty!")
         }
         for (country in countryRepository.findAll()) {
             if (t.country == country.country) {
-                throw IllegalStateException("${t.country} is already existed!")
+                throw IllegalStateException("Unable to add ${t.country} due to existing data!")
             }
         }
     }
 
+    /**
+     * @Usage set the created date for adding country
+     */
     fun afterSave(id: Long) {
         val findCountry = countryRepository.findById(id).get()
         findCountry.created = Date()
@@ -52,6 +53,14 @@ class CountryServiceImpl: CountryService {
         return countryRepository.findAll(PageRequest.of(pageNum, pageSize, Sort.by(Sort.Direction.ASC, "id")))
     }
 
+    /**
+     * @param q is a searched data based on column country of Country entity
+     *
+     * @Do
+     *      - compare query like and verify true status of entity
+     *
+     * @return Pageable format of list of country
+     */
     override fun findAllList(q: String?, page: Int, size: Int): Page<Country>? {
         return countryRepository.findAll({root, _, cb ->
             val predicates = ArrayList<Predicate>()
@@ -80,17 +89,21 @@ class CountryServiceImpl: CountryService {
         return countryRepository.save(country)
     }
 
+    fun beforeUpdate(t: Country) {
+        if (t.country.isEmpty() || t.country.isBlank()) {
+            throw NullPointerException("Country cannot be empty!")
+        }
+        for (country in countryRepository.findAll()) {
+            if (t.country == country.country) {
+                throw IllegalStateException("Unable to update to ${t.country}! Existed data found!")
+            }
+        }
+    }
+
     fun afterUpdate(id: Long) {
         val c = countryRepository.findById(id).get()
         c.updated = Date()
         c.version = c.version!! + 1
         countryRepository.save(c)
-    }
-
-    fun update(id: Long, t: Country): Country? {
-        beforeSaveOrUpdate(t)
-        val update = updateObj(id, t)
-        update?.id?.let { afterUpdate(it) }
-        return update
     }
 }
