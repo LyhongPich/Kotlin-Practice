@@ -58,6 +58,10 @@ class CityServiceImpl: CityService {
         return cityRepository.findAll(Sort.by(Sort.Direction.ASC, "id"))
     }
 
+    fun findAllByPage(page: Int, size: Int): Page<City>? {
+        return cityRepository.findAll(PageRequest.of(page, size, Sort.by(Sort.Direction.ASC, "id")))
+    }
+
     override fun findAllList(q: String?, page: Int, size: Int): Page<City>? {
         return cityRepository.findAll({root, _, cb ->
             val predicates = ArrayList<Predicate>()
